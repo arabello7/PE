@@ -14,7 +14,8 @@
 \usepackage{xcolor,colortbl} 
 \usepackage{setspace}
 \usepackage{float}
-\newcolumntype{'}{!{\vrule width 1pt}}
+\usepackage{makecell}
+\newcolumntype{|}{!{\vrule width 1pt}}
 \newcommand{\PRzFieldDsc}[1]{\sffamily\bfseries\scriptsize #1}
 \newcommand{\PRzFieldCnt}[1]{\textit{#1}}
 \newcommand{\PRzHeading}[8]{
@@ -31,28 +32,28 @@
 \begin{tabular}{ p{0.32\textwidth} p{0.15\textwidth} p{0.15\textwidth} p{0.12\textwidth} p{0.12\textwidth} }
 
   &   &   &   &   \\
-\hline
+\Xhline{0.8pt}
 \multicolumn{5}{|c|}{}\\[-1ex]
 \multicolumn{5}{|c|}{{\LARGE #1}}\\
 \multicolumn{5}{|c|}{}\\[-1ex]
 
-\hline
+\Xhline{0.8pt}
 \multicolumn{1}{|l|}{\PRzFieldDsc{Kierunek}}	& \multicolumn{1}{|l|}{\PRzFieldDsc{Specjalność}}	& \multicolumn{1}{|l|}{\PRzFieldDsc{Rok studiów}}	& \multicolumn{2}{|l|}{\PRzFieldDsc{Symbol grupy lab.}} \\
 \multicolumn{1}{|c|}{\PRzFieldCnt{#2}}		& \multicolumn{1}{|c|}{\PRzFieldCnt{#3}}		& \multicolumn{1}{|c|}{\PRzFieldCnt{#4}}		& \multicolumn{2}{|c|}{\PRzFieldCnt{#5}} \\
 
-\hline
+\Xhline{0.8pt}
 \multicolumn{4}{|l|}{\PRzFieldDsc{Temat Laboratorium}}		& \multicolumn{1}{|l|}{\PRzFieldDsc{Numer lab.}} \\
 \multicolumn{4}{|c|}{\PRzFieldCnt{#6}}				& \multicolumn{1}{|c|}{\PRzFieldCnt{#7}} \\
 
-\hline
+\Xhline{0.8pt}
 \multicolumn{5}{|l|}{\PRzFieldDsc{Skład grupy ćwiczeniowej oraz numery indeksów}}\\
 \multicolumn{5}{|c|}{\PRzFieldCnt{#8}}\\
 
-\hline
+\Xhline{0.8pt}
 \multicolumn{3}{|l|}{\PRzFieldDsc{Uwagi}}	& \multicolumn{2}{|l|}{\PRzFieldDsc{Ocena}} \\
 \multicolumn{3}{|c|}{\PRzFieldCnt{\ }}		& \multicolumn{2}{|c|}{\PRzFieldCnt{\ }} \\
 
-\hline
+\Xhline{0.8pt}
 \end{tabular}
 \end{center}
 }
@@ -68,13 +69,13 @@
 
 \begin{document}
 
-\PRzHeading{Podstawy Elektroniki}{Informatyka}{--}{I}{I1}{Twierdzenie Thevenina}{1}{Artur Mostowski (132289), Łukasz Grygier(132234), Tomasz Jurek(132244)}{}
+\PRzHeading{Podstawy Elektroniki}{Informatyka}{--}{II}{I1}{Twierdzenie Thevenina}{1}{Artur Mostowski (132289), Łukasz Grygier(132234), Tomasz Jurek(132244)}{}
 \section{}%1
 \section{}%2
 \begin{table}[!h]
 \centering
-\begin{tabular}{|y|l|l|l'l|}
-\tthline
+\begin{tabular}{|y|l|l|l|l|}
+\Xhline{0.8pt}
 \rowcolor{Yellow}
 \textbf{Lp.}
 & 
@@ -86,7 +87,7 @@
 &
 \textbf{Wartość rezystancji zmierzona}
 \\
-\hline
+\Xhline{0.8pt}
 \textbf{1}
 & 
 \textbf{R1}
@@ -97,7 +98,7 @@
 &
 {$97,86 \Omega$}
 \\
-\hline\rowcolor{Steel}\cellcolor{Yellow}\textbf{2}
+\Xhline{0.8pt}\rowcolor{Steel}\cellcolor{Yellow}\textbf{2}
 & 
 \textbf{R2}
 &
@@ -108,7 +109,7 @@
 &
 {$499,53 \Omega$}
 \\
-\hline
+\Xhline{0.8pt}
 \textbf{3}
 & 
 \textbf{R3}
@@ -119,7 +120,7 @@
 &
 {$215,57 \Omega$}
 \\
-\hline\rowcolor{Steel}\cellcolor{Yellow}\textbf{4}
+\Xhline{0.8pt}\rowcolor{Steel}\cellcolor{Yellow}\textbf{4}
 & 
 \textbf{R4}
 &
@@ -129,7 +130,7 @@
 &
 {$97,85 \Omega$}
 \\
-\hline
+\Xhline{0.8pt}
 \end{tabular}
 \caption{Odczytania wartości rezystancji na podstawie kodów paskowych używanych rezystorów wraz z wynikami pomiarów ich faktycznej wartości }
 \end{table}
@@ -137,7 +138,7 @@
 \begin{table}[!h]
 \centering
 \begin{tabular}{|y|l|l|}
-\hline
+\Xhline{0.8pt}
 \rowcolor{Yellow}
 \textbf{Lp.}
 & 
@@ -145,33 +146,33 @@
 &
 \textbf{R\textsubscript{th}}
 \\
-\hline
+\Xhline{0.8pt}
 \textbf{1}
 & 
 
 &
 
 \\
-\hline\rowcolor{Steel}\cellcolor{Yellow}\textbf{2}
+\Xhline{0.8pt}\rowcolor{Steel}\cellcolor{Yellow}\textbf{2}
 & 
 
 &
 
 \\
-\hline
+\Xhline{0.8pt}
 \textbf{3}
 & 
 
 &
 
 \\
-\hline\rowcolor{Steel}\cellcolor{Yellow}\textbf{4}
+\Xhline{0.8pt}\rowcolor{Steel}\cellcolor{Yellow}\textbf{4}
 & 
 
 &
 
 \\
-\hline
+\Xhline{0.8pt}
 \end{tabular}
 \caption{Odczytania wartości rezystancji na podstawie kodów paskowych używanych rezystorów wraz z wynikami pomiarów ich faktycznej wartości }
 \end{table}
@@ -190,7 +191,7 @@
 \begin{table}[!h]
 \centering
 \begin{tabular}{|y|l|l|l|}
-\hline
+\Xhline{0.8pt}
 \rowcolor{Yellow}
 \textbf{Lp.}
 & 
@@ -200,7 +201,7 @@
 &
 \textbf{I\_R\textsubscript{x}}
 \\
-\hline
+\Xhline{0.8pt}
 \textbf{1}
 & 
 
@@ -209,7 +210,7 @@
 &
 
 \\
-\hline\rowcolor{Steel}\cellcolor{Yellow}\textbf{2}
+\Xhline{0.8pt}\rowcolor{Steel}\cellcolor{Yellow}\textbf{2}
 & 
 
 &
@@ -217,7 +218,7 @@
 &
 
 \\
-\hline
+\Xhline{0.8pt}
 \textbf{3}
 & 
 
@@ -226,7 +227,7 @@
 &
 
 \\
-\hline
+\Xhline{0.8pt}
 \end{tabular}
 \caption{Odczytania wartości rezystancji na podstawie kodów paskowych używanych rezystorów wraz z wynikami pomiarów ich faktycznej wartości }
 \end{table}
@@ -235,7 +236,7 @@
 \begin{table}[!h]
 \centering
 \begin{tabular}{|y|l|l|}
-\hline
+\Xhline{0.8pt}
 \rowcolor{Yellow}
 \textbf{Lp.}
 & 
@@ -243,33 +244,33 @@
 &
 \textbf{I\_R\textsubscript{x}(z pomiarów}
 \\
-\hline
+\Xhline{0.8pt}
 \textbf{1}
 & 
 
 &
 
 \\
-\hline\rowcolor{Steel}\cellcolor{Yellow}\textbf{2}
+\Xhline{0.8pt}\rowcolor{Steel}\cellcolor{Yellow}\textbf{2}
 & 
 
 &
 
 \\
-\hline
+\Xhline{0.8pt}
 \textbf{3}
 & 
 
 &
 
 \\
-\hline\rowcolor{Steel}\cellcolor{Yellow}\textbf{4}
+\Xhline{0.8pt}\rowcolor{Steel}\cellcolor{Yellow}\textbf{4}
 & 
 
 &
 
 \\
-\hline
+\Xhline{0.8pt}
 \end{tabular}
 \caption{Odczytania wartości rezystancji na podstawie kodów paskowych używanych rezystorów wraz z wynikami pomiarów ich faktycznej wartości }
 \end{table}
@@ -860,4 +861,3 @@ http://mariusznaumowicz.ddns.net/
 
 
 \end{document}
-
